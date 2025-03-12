@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Philipp Pelz">
+<meta name="author" content="Shengbo You">
+<meta name="dcterms.date" content="2025-03-12">
+<meta name="keywords" content="Materials Science">
+
+<title>Seminar Materials &amp; Structure SS 25</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b53751a350365c71b6c909e95f209ed1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-de27bd1957236c0c7f85e839ec4632df.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+
+
+<link rel="stylesheet" href="styles.css">
+<meta name="citation_title" content="Seminar Materials &amp;amp; Structure SS 25">
+<meta name="citation_abstract" content="This is the website for the Seminar Materials &amp;amp; Structure
+">
+<meta name="citation_keywords" content="Materials Science">
+<meta name="citation_author" content="Philipp Pelz">
+<meta name="citation_author" content="Shengbo You">
+<meta name="citation_publication_date" content="2025-03-12">
+<meta name="citation_cover_date" content="2025-03-12">
+<meta name="citation_year" content="2025">
+<meta name="citation_online_date" content="2025-03-12">
+<meta name="citation_language" content="en">
+<meta name="citation_journal_title" content="Friedrich-Alexander Universitaet Erlangen-Nuernberg">
+<meta name="citation_reference" content="citation_title=Strategies for the development of volcanic hazard maps in monogenetic volcanic fields: The example of La Palma (Canary Islands);,citation_author=José Marrero;,citation_author=Alicia García;,citation_author=Manuel Berrocoso;,citation_author=Ángeles Llinares;,citation_author=Antonio Rodríguez-Losada;,citation_author=R. Ortiz;,citation_publication_date=2019-07;,citation_cover_date=2019-07;,citation_year=2019;,citation_doi=10.1186/s13617-019-0085-5;,citation_volume=8;,citation_journal_title=Journal of Applied Volcanology;">
+<meta name="citation_reference" content="citation_title=A robust synthetic data generation framework for machine learning in high-resolution transmission electron microscopy (HRTEM);,citation_author=Luis Rangel DaCosta;,citation_author=Katherine Sytwu;,citation_author=CK Groschner;,citation_author=MC Scott;,citation_publication_date=2024;,citation_cover_date=2024;,citation_year=2024;,citation_issue=1;,citation_volume=10;,citation_journal_title=npj Computational Materials;,citation_publisher=Nature Publishing Group UK London;">
+<meta name="citation_reference" content="citation_title=Uncovering material deformations via machine learning combined with four-dimensional scanning transmission electron microscopy;,citation_author=Chuqiao Shi;,citation_author=Michael C Cao;,citation_author=Sarah M Rehn;,citation_author=Sang-Hoon Bae;,citation_author=Jeehwan Kim;,citation_author=Matthew R Jones;,citation_author=David A Muller;,citation_author=Yimo Han;,citation_publication_date=2022;,citation_cover_date=2022;,citation_year=2022;,citation_issue=1;,citation_volume=8;,citation_journal_title=npj Computational Materials;,citation_publisher=Nature Publishing Group UK London;">
+<meta name="citation_reference" content="citation_title=Unsupervised deep denoising for four-dimensional scanning transmission electron microscopy;,citation_author=Alireza Sadri;,citation_author=Timothy C Petersen;,citation_author=Emmanuel WC Terzoudis-Lumsden;,citation_author=Bryan D Esser;,citation_author=Joanne Etheridge;,citation_author=Scott D Findlay;,citation_publication_date=2024;,citation_cover_date=2024;,citation_year=2024;,citation_issue=1;,citation_volume=10;,citation_journal_title=npj Computational Materials;,citation_publisher=Nature Publishing Group UK London;">
+<meta name="citation_reference" content="citation_title=Multi-resolution convolutional neural networks for inverse problems;,citation_author=Feng Wang;,citation_author=Alberto Eljarrat;,citation_author=Johannes Müller;,citation_author=Trond R Henninen;,citation_author=Rolf Erni;,citation_author=Christoph T Koch;,citation_publication_date=2020;,citation_cover_date=2020;,citation_year=2020;,citation_issue=1;,citation_volume=10;,citation_journal_title=Scientific reports;,citation_publisher=Nature Publishing Group UK London;">
+</head>
+
+<body>
+
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Seminar Materials &amp; Structure SS 25</h1>
+          </div>
+
+    
+    <div class="quarto-title-meta-container">
+      <div class="quarto-title-meta-column-start">
+            <div class="quarto-title-meta-author">
+          <div class="quarto-title-meta-heading">Authors</div>
+          <div class="quarto-title-meta-heading">Affiliation</div>
+          
+                <div class="quarto-title-meta-contents">
+            <p class="author">Philipp Pelz <a href="mailto:philipp.pelz@fau.de" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0000-0002-8009-4515" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+          </div>
+                <div class="quarto-title-meta-contents">
+                    <p class="affiliation">
+                        FAU Erlangen-Nuernberg
+                      </p>
+                  </div>
+                      <div class="quarto-title-meta-contents">
+            <p class="author">Shengbo You <a href="mailto:shengbo.you@fau.de" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+          </div>
+                <div class="quarto-title-meta-contents">
+                    <p class="affiliation">
+                        FAU Erlangen-Nuernberg
+                      </p>
+                  </div>
+                    </div>
+        
+        <div class="quarto-title-meta">
+
+                      
+                <div>
+            <div class="quarto-title-meta-heading">Published</div>
+            <div class="quarto-title-meta-contents">
+              <p class="date">March 12, 2025</p>
+            </div>
+          </div>
+          
+                
+              </div>
+      </div>
+      <div class="quarto-title-meta-column-end quarto-other-formats-target">
+      <div class="quarto-alternate-formats"><div class="quarto-title-meta-heading">Other Formats</div><div class="quarto-title-meta-contents"><p><a href="index.docx"><i class="bi bi-file-word"></i>MS Word</a></p></div></div></div>
+    </div>
+
+    <div>
+      <div class="abstract">
+        <div class="block-title">Abstract</div>
+        <p>This is the website for the Seminar Materials &amp; Structure</p>
+      </div>
+    </div>
+
+    <div>
+      <div class="keywords">
+        <div class="block-title">Keywords</div>
+        <p>Materials Science</p>
+      </div>
+    </div>
+
+    <div class="quarto-other-links-text-target">
+    </div>  </div>
+</header><div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
+<div id="quarto-sidebar-toc-left" class="sidebar toc-left">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#tips-for-giving-a-great-seminar-presentation" id="toc-tips-for-giving-a-great-seminar-presentation" class="nav-link active" data-scroll-target="#tips-for-giving-a-great-seminar-presentation"><span class="header-section-number">1</span> Tips for Giving a Great Seminar Presentation</a>
+  <ul class="collapse">
+  <li><a href="#preparing-your-presentation" id="toc-preparing-your-presentation" class="nav-link" data-scroll-target="#preparing-your-presentation"><span class="header-section-number">1.1</span> Preparing Your Presentation</a></li>
+  <li><a href="#delivering-your-presentation" id="toc-delivering-your-presentation" class="nav-link" data-scroll-target="#delivering-your-presentation"><span class="header-section-number">1.2</span> Delivering Your Presentation</a></li>
+  <li><a href="#handling-questions-and-discussions" id="toc-handling-questions-and-discussions" class="nav-link" data-scroll-target="#handling-questions-and-discussions"><span class="header-section-number">1.3</span> Handling Questions and Discussions</a></li>
+  <li><a href="#technical-aspects-to-consider" id="toc-technical-aspects-to-consider" class="nav-link" data-scroll-target="#technical-aspects-to-consider"><span class="header-section-number">1.4</span> Technical Aspects to Consider</a></li>
+  <li><a href="#final-reminders" id="toc-final-reminders" class="nav-link" data-scroll-target="#final-reminders"><span class="header-section-number">1.5</span> Final Reminders</a></li>
+  </ul></li>
+  <li><a href="#possible-topics" id="toc-possible-topics" class="nav-link" data-scroll-target="#possible-topics"><span class="header-section-number">2</span> Possible Topics</a>
+  <ul class="collapse">
+  <li><a href="#popular-science-books-on-materials-science" id="toc-popular-science-books-on-materials-science" class="nav-link" data-scroll-target="#popular-science-books-on-materials-science"><span class="header-section-number">2.1</span> Popular Science Books on Materials Science</a></li>
+  <li><a href="#materialism-podcast" id="toc-materialism-podcast" class="nav-link" data-scroll-target="#materialism-podcast"><span class="header-section-number">2.2</span> Materialism Podcast</a></li>
+  </ul></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+</div>
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+  
+
+
+<ul>
+<li><a href="https://pelzlab.science">Pelz Lab website</a></li>
+<li><a href="https://www.studon.fau.de/studon/ilias.php?baseClass=ilrepositorygui&amp;ref_id=6216946">Studon Link</a></li>
+</ul>
+<section id="tips-for-giving-a-great-seminar-presentation" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="tips-for-giving-a-great-seminar-presentation"><span class="header-section-number">1</span> Tips for Giving a Great Seminar Presentation</h2>
+<section id="preparing-your-presentation" class="level3" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="preparing-your-presentation"><span class="header-section-number">1.1</span> Preparing Your Presentation</h3>
+<ul>
+<li><p><strong>Understand Your Audience</strong><br>
+Keep in mind that your audience consists of undergraduate students who may not be familiar with complex technical details. Aim for clarity and accessibility.</p></li>
+<li><p><strong>Structure Your Presentation Clearly</strong><br>
+A good presentation should have:</p>
+<ul>
+<li><strong>Introduction</strong> – Briefly introduce the topic and why it matters.</li>
+<li><strong>Main Content</strong> – Explain key concepts, methods, and applications.</li>
+<li><strong>Case Studies or Examples</strong> – Provide real-world examples to keep the audience engaged.</li>
+<li><strong>Conclusion</strong> – Summarize key takeaways and open the floor for discussion.</li>
+</ul></li>
+<li><p><strong>Use Visuals Effectively</strong></p>
+<ul>
+<li>Include <strong>diagrams, charts, and images</strong> to explain complex concepts.</li>
+<li>Avoid cluttered slides—<strong>less text, more visuals</strong>.</li>
+<li>Use consistent fonts and colors to maintain readability.</li>
+</ul></li>
+<li><p><strong>Practice Your Timing</strong></p>
+<ul>
+<li>Keep your presentation within the allotted time (typically 10-20 minutes).</li>
+<li>Rehearse in front of a friend or a mirror to refine your delivery.</li>
+</ul></li>
+</ul>
+</section>
+<section id="delivering-your-presentation" class="level3" data-number="1.2">
+<h3 data-number="1.2" class="anchored" data-anchor-id="delivering-your-presentation"><span class="header-section-number">1.2</span> Delivering Your Presentation</h3>
+<ul>
+<li><strong>Speak Clearly and Confidently</strong>
+<ul>
+<li>Avoid reading directly from slides or notes.</li>
+<li>Maintain a steady pace and use pauses for emphasis.</li>
+</ul></li>
+<li><strong>Engage with Your Audience</strong>
+<ul>
+<li>Make eye contact instead of staring at your slides.</li>
+<li>Ask rhetorical questions or invite short interactions to keep attention high.</li>
+</ul></li>
+<li><strong>Manage Nervousness</strong>
+<ul>
+<li>Take deep breaths before starting.</li>
+<li>Use hand gestures naturally to emphasize points.</li>
+<li>Remember, the audience is there to learn—not to judge you!</li>
+</ul></li>
+</ul>
+</section>
+<section id="handling-questions-and-discussions" class="level3" data-number="1.3">
+<h3 data-number="1.3" class="anchored" data-anchor-id="handling-questions-and-discussions"><span class="header-section-number">1.3</span> Handling Questions and Discussions</h3>
+<ul>
+<li><strong>Be Prepared for Questions</strong>
+<ul>
+<li>Anticipate potential questions and have extra information ready.</li>
+<li>If you don’t know the answer, admit it and suggest ways to find out.</li>
+</ul></li>
+<li><strong>Encourage Participation</strong>
+<ul>
+<li>Ask the audience their thoughts or experiences related to the topic.</li>
+<li>Use real-world scenarios to spark discussion.</li>
+</ul></li>
+</ul>
+</section>
+<section id="technical-aspects-to-consider" class="level3" data-number="1.4">
+<h3 data-number="1.4" class="anchored" data-anchor-id="technical-aspects-to-consider"><span class="header-section-number">1.4</span> Technical Aspects to Consider</h3>
+<ul>
+<li><strong>Test Your Equipment</strong>
+<ul>
+<li>Make sure your slides work on the presentation system in advance.</li>
+<li>Have a backup plan (e.g., printed notes or USB drive).</li>
+</ul></li>
+<li><strong>Use a Strong Opening and Closing</strong>
+<ul>
+<li>Start with a <strong>compelling hook</strong>—a question, statistic, or short story.</li>
+<li>End with a strong statement or a thought-provoking idea.</li>
+</ul></li>
+</ul>
+</section>
+<section id="final-reminders" class="level3" data-number="1.5">
+<h3 data-number="1.5" class="anchored" data-anchor-id="final-reminders"><span class="header-section-number">1.5</span> Final Reminders</h3>
+<ul>
+<li><strong>Stay Within the Time Limit</strong> – Respect the audience’s time.</li>
+<li><strong>Keep It Simple</strong> – Don’t overload slides with unnecessary details.</li>
+<li><strong>Have Fun!</strong> – Passion and enthusiasm make a big difference.</li>
+</ul>
+<p>By following these tips, you’ll be able to deliver a clear, engaging, and impactful seminar presentation. Good luck!</p>
+</section>
+</section>
+<section id="possible-topics" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="possible-topics"><span class="header-section-number">2</span> Possible Topics</h2>
+<section id="popular-science-books-on-materials-science" class="level3" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="popular-science-books-on-materials-science"><span class="header-section-number">2.1</span> Popular Science Books on Materials Science</h3>
+<section id="general-materials-science" class="level4" data-number="2.1.1">
+<h4 data-number="2.1.1" class="anchored" data-anchor-id="general-materials-science"><span class="header-section-number">2.1.1</span> General Materials Science</h4>
+<ol type="1">
+<li><p><strong>Stuff Matters: Exploring the Marvelous Materials That Shape Our Man-Made World</strong> – <em>Mark Miodownik</em><br>
+A fascinating exploration of the materials that define our world, from glass to chocolate, written by a materials scientist.</p></li>
+<li><p><strong>The New Science of Strong Materials: Or Why You Don’t Fall Through the Floor</strong> – <em>J.E. Gordon</em><br>
+A classic introduction to how materials work, explaining why some materials are strong and others are not.</p></li>
+<li><p><strong>Structures: Or Why Things Don’t Fall Down</strong> – <em>J.E. Gordon</em><br>
+A fun and informative look at the physics of structures, from bridges to bones.</p></li>
+<li><p><strong>Made to Measure: New Materials for the 21st Century</strong> – <em>Philip Ball</em><br>
+Explores how scientists are designing new materials at the molecular level for future applications.</p></li>
+<li><p><strong>Materials: A Very Short Introduction</strong> – <em>Christopher Hall</em><br>
+A concise and accessible overview of materials science, from their atomic structure to everyday applications.</p></li>
+<li><p><strong>The Science and Engineering of Materials</strong> – <em>Donald R. Askeland &amp; Wendelin J. Wright</em><br>
+A comprehensive yet readable textbook covering the fundamental principles of materials science.</p></li>
+</ol>
+</section>
+<section id="nanotechnology-advanced-materials" class="level4" data-number="2.1.2">
+<h4 data-number="2.1.2" class="anchored" data-anchor-id="nanotechnology-advanced-materials"><span class="header-section-number">2.1.2</span> Nanotechnology &amp; Advanced Materials</h4>
+<ol start="7" type="1">
+<li><p><strong>Plenty of Room for Everyone: Nanotechnology in the Marketplace</strong> – <em>Luis E. Liz-Marzán</em><br>
+Examines the real-world applications of nanotechnology and how it is transforming industries.</p></li>
+<li><p><strong>Soft Machines: Nanotechnology and Life</strong> – <em>Richard A.L. Jones</em><br>
+Explores the connections between nanotechnology and biological systems.</p></li>
+<li><p><strong>Molecular Machines: The Story of Nanotechnology</strong> – <em>Philip Ball</em><br>
+A deep dive into how scientists are building tiny machines at the molecular scale.</p></li>
+<li><p><strong>Nanotechnology for Dummies</strong> – <em>Earl Boysen &amp; Nancy C. Muir</em><br>
+A beginner-friendly guide to the science and potential of nanotechnology.</p></li>
+<li><p><strong>The Nanotech Pioneers: Where Are They Taking Us?</strong> – <em>Steven A. Edwards</em><br>
+Discusses the history and future of nanotechnology, including its ethical and societal implications.</p></li>
+</ol>
+</section>
+<section id="metamaterials-smart-materials" class="level4" data-number="2.1.3">
+<h4 data-number="2.1.3" class="anchored" data-anchor-id="metamaterials-smart-materials"><span class="header-section-number">2.1.3</span> Metamaterials &amp; Smart Materials</h4>
+<ol start="12" type="1">
+<li><p><strong>The Magic of Metamaterials</strong> – <em>Jürgen Stampfl, Richard W. Siegel, and Hans J. Fecht</em><br>
+Explains how metamaterials with unique properties are changing science and engineering.</p></li>
+<li><p><strong>Metamaterials: Physics and Engineering Explorations</strong> – <em>Nader Engheta &amp; Richard W. Ziolkowski</em><br>
+A technical yet engaging overview of how metamaterials manipulate electromagnetic waves.</p></li>
+<li><p><strong>Smart Materials and Structures</strong> – <em>M. V. Gandhi &amp; B. S. Thompson</em><br>
+Covers materials that change properties in response to external stimuli, like shape-memory alloys.</p></li>
+</ol>
+</section>
+<section id="history-social-impact-of-materials-science" class="level4" data-number="2.1.4">
+<h4 data-number="2.1.4" class="anchored" data-anchor-id="history-social-impact-of-materials-science"><span class="header-section-number">2.1.4</span> History &amp; Social Impact of Materials Science</h4>
+<ol start="15" type="1">
+<li><p><strong>The Alchemy of Us: How Humans and Matter Transformed One Another</strong> – <em>Ainissa Ramirez</em><br>
+Shows how materials have shaped human history and culture in surprising ways.</p></li>
+<li><p><strong>Why Things Break: Understanding the World by the Way It Comes Apart</strong> – <em>Mark E. Eberhart</em><br>
+A look at the science of failure in materials, from airplane crashes to crumbling buildings.</p></li>
+<li><p><strong>The Substance of Civilization: Materials and Human History from the Stone Age to the Age of Silicon</strong> – <em>Stephen L. Sass</em><br>
+Explores the history of materials and how they have driven human progress.</p></li>
+<li><p><strong>The Elements of Power: Gadgets, Guns, and the Struggle for a Sustainable Future in the Rare Metal Age</strong> – <em>David S. Abraham</em><br>
+Examines the role of rare metals in modern technology and the geopolitical challenges of securing them.</p></li>
+</ol>
+</section>
+</section>
+<section id="materialism-podcast" class="level3" data-number="2.2">
+<h3 data-number="2.2" class="anchored" data-anchor-id="materialism-podcast"><span class="header-section-number">2.2</span> Materialism Podcast</h3>
+<section id="fundamentals-classic-materials-science-topics" class="level4" data-number="2.2.1">
+<h4 data-number="2.2.1" class="anchored" data-anchor-id="fundamentals-classic-materials-science-topics"><span class="header-section-number">2.2.1</span> Fundamentals &amp; Classic Materials Science Topics</h4>
+<ol start="19" type="1">
+<li><p><strong>Episode 95: You Don’t Know Anything About Steel</strong><br>
+Steel is foundational to engineering and an excellent topic for materials science students.</p></li>
+<li><p><strong>Episode 97: Titanium</strong><br>
+A widely used material in aerospace and medical fields, great for discussing material properties and applications.</p></li>
+<li><p><strong>Episode 91: High Entropy Alloys</strong><br>
+A modern and rapidly evolving topic in metallurgy, providing insights into novel materials design.</p></li>
+<li><p><strong>Episode 99: Bulk Metallic Glasses</strong><br>
+A fascinating and relatively new class of materials that challenges conventional metallurgy.</p></li>
+<li><p><strong>Episode 93: An Introduction to Pyrometallurgy</strong><br>
+Covers essential metallurgical processes, useful for students interested in materials processing.</p></li>
+<li><p><strong>Episode 92: The Quest for Pure Uranium</strong><br>
+Offers historical and scientific insights into materials purification, with real-world impact.</p></li>
+</ol>
+</section>
+<section id="emerging-advanced-materials" class="level4" data-number="2.2.2">
+<h4 data-number="2.2.2" class="anchored" data-anchor-id="emerging-advanced-materials"><span class="header-section-number">2.2.2</span> Emerging &amp; Advanced Materials</h4>
+<ol start="25" type="1">
+<li><p><strong>Episode 94: An Introduction to Quantum Materials</strong><br>
+Covers cutting-edge materials with applications in computing and electronics.</p></li>
+<li><p><strong>Episode 96: Spark Ablation with VSParticle</strong><br>
+An advanced materials processing technique, great for discussing nanomaterials.</p></li>
+<li><p><strong>Episode 86: PHAs and Biodegradable Plastic</strong><br>
+Sustainability is a huge topic in materials science, and PHAs are a great case study.</p></li>
+<li><p><strong>Episode 101: All About Biomatter</strong><br>
+Discusses innovative ways to create materials from biological sources, tying into sustainability.</p></li>
+<li><p><strong>Episode 81: New Materials for Carbon Capture</strong><br>
+Addresses a major environmental challenge through materials innovation.</p></li>
+<li><p><strong>Episode 88: Accelerating Materials Discovery with Microsoft</strong><br>
+Explores the intersection of machine learning and materials science.</p></li>
+</ol>
+</section>
+<section id="processing-manufacturing-techniques" class="level4" data-number="2.2.3">
+<h4 data-number="2.2.3" class="anchored" data-anchor-id="processing-manufacturing-techniques"><span class="header-section-number">2.2.3</span> Processing &amp; Manufacturing Techniques</h4>
+<ol start="31" type="1">
+<li><p><strong>Episode 67: Additive Manufacturing at General Electric</strong><br>
+Additive manufacturing (3D printing) is a hot topic with broad applications.</p></li>
+<li><p><strong>Episode 35: Spark Plasma Sintering</strong><br>
+A widely used technique for material densification with interesting scientific principles.</p></li>
+<li><p><strong>Episode 79: Cryogenic Milling at Cal Nano</strong><br>
+A unique and lesser-known method for altering material properties through extreme cooling.</p></li>
+</ol>
+</section>
+<section id="engineering-failures-case-studies" class="level4" data-number="2.2.4">
+<h4 data-number="2.2.4" class="anchored" data-anchor-id="engineering-failures-case-studies"><span class="header-section-number">2.2.4</span> Engineering Failures &amp; Case Studies</h4>
+<ol start="34" type="1">
+<li><p><strong>Episode 90: The Big Dig Incident</strong><br>
+Examines the consequences of material selection errors, making it a strong case study for engineering ethics.</p></li>
+<li><p><strong>Episode 45: Was the Challenger an Engineering Failure?</strong><br>
+A major historical failure with deep material science implications.</p></li>
+<li><p><strong>Episode 42: What Really Sunk the Titanic?</strong><br>
+A mix of history and materials science, great for an engaging presentation.</p></li>
+<li><p><strong>Episode 26: When Materials Failure Leads to Wildfire</strong><br>
+Covers the role of materials science in preventing large-scale disasters.</p></li>
+</ol>
+</section>
+</section>
+</section>
+<section id="references" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="references">References</h2>
+<div id="refs" role="list">
+
+</div>
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{pelz2025,
+  author = {Pelz, Philipp and You, Shengbo},
+  title = {Seminar {Materials} \&amp; {Structure} {SS} 25},
+  date = {2025-03-12},
+  langid = {en},
+  abstract = {This is the website for the Seminar Materials \&amp;
+    Structure}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-pelz2025" class="csl-entry quarto-appendix-citeas" role="listitem">
+Pelz, Philipp, and Shengbo You. 2025. <span>“Seminar Materials &amp;
+Structure SS 25.”</span> Friedrich-Alexander Universitaet
+Erlangen-Nuernberg. March 12, 2025.
+</div></div></section></div></main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
