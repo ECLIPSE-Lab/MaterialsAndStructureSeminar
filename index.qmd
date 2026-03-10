@@ -37,8 +37,49 @@ citation:
 number-sections: true
 jupyter: python3
 ---
-- [Pelz Lab website](https://pelzlab.science)
-- [Studon Link](https://www.studon.fau.de/studon/ilias.php?baseClass=ilrepositorygui&ref_id=6216946)
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[![](images/eclipse_header.png){width=300}](https://pelzlab.science)
+:::
+
+::: {.column width="25%"}
+[![](images/github.jpeg){width=120}](https://github.com/ECLIPSE-Lab/MaterialsAndStructureSeminar)
+
+**Github Code**
+:::
+
+::: {.column width="25%"}
+[![](images/studon.jpeg){width=120}](https://www.studon.fau.de/)
+
+**Studon Link**
+:::
+
+::::
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[![](images/eclipse_header.png){width=300}](https://pelzlab.science)
+:::
+
+::: {.column width="25%"}
+[![](images/github.jpeg){width=120}](https://github.com/ECLIPSE-Lab/MaterialsAndStructureSeminar)
+
+**Github Code**
+:::
+
+::: {.column width="25%"}
+[![](images/studon.jpeg){width=120}](https://www.studon.fau.de/)
+
+**Studon Link**
+:::
+
+::::
+
 
 ## Tips for Giving a Great Seminar Presentation
 
